@@ -1,0 +1,192 @@
+:root{
+    --vermelho:#E50914;
+    --preta:#141414;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/*elementos base*/
+body{
+   background: var(--preta);
+   font-family: 'Arial', Times, serif;
+   color:white;
+}
+
+
+header .container{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size:40px;
+}
+
+header nav a{
+    text-decoration:none;
+    color:#AAA;
+    margin-right: 10px;
+}
+
+
+header nav a:hover{
+    color:#fff;
+}
+
+.titulofilme {
+    width: 900px;
+}
+
+
+.filme-principal{
+    font-size:16px;
+    background-image: url('/img/ridleydesenho.webp');
+
+    height:850px;
+    background-size:cover;
+ 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.logo {
+    width: 120px;
+}
+
+.foto-perfil{
+    width: 30px;
+    border-radius: 5px;
+}
+
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.descricao {
+    color: white;
+    font-size: 25px;
+    text-shadow:
+                -1px -1px 0px rgb(0, 0, 0),
+                -1px 1px 0px rgb(0, 0, 0),
+                1px -1px 0px rgb(0, 0, 0),
+                1px 0px 0px rgb(0, 0, 0);
+}
+
+
+.filme-principal .titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(255, 255, 255, 0.5);
+    border:none;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+
+    padding:15px 30px;
+    margin-right: 15px;
+    font-size: 20px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color:white;
+    color:black;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+
+.container{
+    margin-left: 60px;
+    margin-right: 80px;
+    margin-block-start: 20px;
+    margin-block-end: 10px;
+}
+
+.menudireita {
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 15px;
+    color: white;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+.subtitulo {
+    font-family: 'Arial Black', 'Times';
+    font-size: 18px;
+    margin-left: 60px;
+    margin-block-start: 13px;
+    margin-block-end: 12px;
+}
+
+.efeito {
+    background: var(--preta);
+    transform-style: preserve-3d;
+    color: white;
+    border: none;
+    width: 80px;
+
+}
+
+.efeito:after {
+    top: -100%;
+    left: 10px;
+    width: 100%;
+    padding: 10px;
+    position: absolute;
+    background: var(--preta);
+    box-sizing: border-box;
+    content: 'Ver tudo';
+    color: white;
+    transform-origin: center;
+    transform: rotateX(90deg);
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 15px;
+}
+.efeito:hover {
+    transform-origin:center;
+    transform: rotateX(-90deg) translateY(100%);
+
+
+}
+
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+    margin-left: 60px;
+}
+
+
+.carrosel-filmes{
+    margin-top:5px;
+}
