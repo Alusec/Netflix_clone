@@ -1,1 +1,1 @@
-# Minha página da Netflix(Clone).
+# Minha página da Netflix (Clone).
